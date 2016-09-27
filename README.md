@@ -4,7 +4,7 @@
 
 - [Bootstrap](http://getbootstrap.com)
 - [jQuery](https://jquery.com)
-- [AngujaJs](https://angularjs.org)
+- [AngujaJS](https://angularjs.org)
 
 ## Setup
   * Clone this repository
