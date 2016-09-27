@@ -1,5 +1,11 @@
 # Layout Red Venture PSD to HTML
 
+## Prerequisites
+
+- NodeJS
+- NPM
+- Git
+
 ## Tchnologies Used
 
 - [Bootstrap](http://getbootstrap.com)
