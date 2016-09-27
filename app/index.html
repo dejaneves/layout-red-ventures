@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" ng-app="app">
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
    <meta name="author" content="">
    <title>A Red Ventures</title>
    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+   <link href="vendor/material-design-iconic-font/dist/css/material-design-iconic-font.css" rel="stylesheet">
    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
 </head>
@@ -35,9 +36,7 @@
          <div class="container">
             <!-- .row -->
             <div class="row">
-               <div class="col-sm-6 col-lg-5 col-lg-offset-1">
-
-               </div>
+               <div class="col-sm-6 col-lg-5 col-lg-offset-1"></div>
                <div class="col-sm-6 col-lg-5">
                   <div class="header-content-text">
                      <div class="header-content-title">
@@ -45,194 +44,75 @@
                         <p>Some cool text here about the new collection of design furniture 2016</p>
                         <button type="button" class="btn btn-primary">Buy Now</button>
                      </div>
-
-                     <!-- <h5>Download Now at:</h5> -->
-                     <!-- <div class="btn-section">
-                        <a href="#" class="btn-custom btn-blue">App Store</a>
-                        <a href="#" class="btn-custom btn-green">Google Play</a>
-                     </div> -->
                   </div>
                </div>
             </div>
-            <!-- .row end -->
          </div>
-         <!-- .container end -->
       </div>
-      <!-- .header-content -->
    </header>
 
    <div class="filter">
       <div class="container">
          <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 checkbox-type">
                <label class="checkbox-inline">
-                  TYPE:
+                  <strong class="text-black">TYPE:</strong>
+               </label>
+
+               <label class="checkbox-inline">
+                  <input type="checkbox" data-type="armchairs" value="option1"><span class="text-uppercase">Armchairs</span>
+                  <i class="input-helper"></i>
+               </label>
+
+               <label class="checkbox-inline">
+                  <input type="checkbox" data-type="chairs" value="option2"> <span class="text-uppercase">Chairs</span>
+               </label>
+            </div>
+            <div class="col-sm-4 checkbox-material">
+               <label class="checkbox-inline">
+                  <strong class="text-black">MATERIAL:</strong>
                </label>
                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> ARMCHAIRS
+                  <input type="checkbox" data-type="wood" value="option1"><span class="text-uppercase">Wood</span>
                </label>
                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> CHAIRS
+                  <input type="checkbox" data-type="foam" value="option2"><span class="text-uppercase">Foam</span>
                </label>
             </div>
             <div class="col-sm-4">
-               <label class="checkbox-inline">
-                  MATERIAL:
-               </label>
-               <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> ARMCHAIRS
-               </label>
-               <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> CHAIRS
-               </label>
-            </div>
-            <div class="col-sm-4">
-               <button type="button" class="btn btn-primary text-uppercase pull-right"> <span>See All Products</span> </button>
+               <button type="button" class="btn btn-primary text-uppercase pull-right btn-all-products"> <span>See All Products</span> </button>
             </div>
          </div>
       </div>
    </div>
 
-   <div class="post-heading-center">
-     <h2 class="text-uppercase">New Armchairs</h2>
-   </div>
-   <div class="container col-center">
-      <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 3.svg" alt="" />
-                <div class="panel-body__description">
-                   <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                   <span class="panel-body__description__detail--price">$ 350,00</span>
-                   <span class="panel-body__description__detail--button">
-                     <button type="button" class="btn btn-default center-block">
-                        <img src="images/cart-xs.svg" alt="" style="height:22px; width: 27px;" /> <span>Buy Now</span></button>
-                  </span>
-                </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 6.svg" alt="" />
-                <div class="panel-body__description">
-                   <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                   <span class="panel-body__description__detail--price">$ 350,00</span>
-                </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 5.svg" alt="" />
-                <div class="panel-body__description">
-                  <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                  <span class="panel-body__description__detail--price">$ 350,00</span>
-               </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 7.svg" alt="" />
-                <div class="panel-body__description">
-                  <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                  <span class="panel-body__description__detail--price">$ 350,00</span>
-               </div>
-             </div>
-           </div>
-        </div>
-      </div>
-      <div class="row">
-         <div class="col-sm-12">
+
+   <div class="products" id="products-body">
+
+      <div data-parent="armchairs" class="content-parent">
+         <div class="post-heading-center">
+            <h2 class="text-uppercase">New Armchairs</h2>
          </div>
-      </div>
-   </div>
-
-   <div class="post-heading-center">
-     <h2 class="text-uppercase">Best OF 2016</h2>
-   </div>
-   <div class="container col-center">
-      <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 3.svg" alt="" />
-                <div class="panel-body__description">
-                   <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                   <span class="panel-body__description__detail--price">$ 350,00</span>
-                   <span class="panel-body__description__detail--button">
-                     <button type="button" class="btn btn-default center-block">
-                        <img src="images/cart-xs.svg" alt="" style="height:22px; width: 27px;" /> <span>Buy Now</span></button>
-                  </span>
-                </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 6.svg" alt="" />
-                <div class="panel-body__description">
-                   <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                   <span class="panel-body__description__detail--price">$ 350,00</span>
-                </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 5.svg" alt="" />
-                <div class="panel-body__description">
-                  <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                  <span class="panel-body__description__detail--price">$ 350,00</span>
+         <div class="container col-center">
+         <div class="row">
+            <div class="col-md-12">
+               <div id="Carousel" class="carousel slide">
+                  <products-new-armchair></products-new-armchair>
                </div>
-             </div>
-           </div>
-        </div>
-        <div class="col-sm-3">
-           <div class="panel panel-default">
-             <div class="panel-body">
-                <h4 class="text-left text-uppercase">Armchair / Wood</h4>
-                <img src="images/Layer 7.svg" alt="" />
-                <div class="panel-body__description">
-                  <span class="panel-body__description__detail--title">Modern Black Armchair</span>
-                  <span class="panel-body__description__detail--price">$ 350,00</span>
-               </div>
-             </div>
-           </div>
-        </div>
-      </div>
-      <div class="row">
-         <div class="col-sm-12">
-
-         </div>
-      </div>
-   </div>
-
-   <div class="about">
-      <div class="about-content">
-         <div class="container">
-            <div class="about-heading-center">
-              <h2 class="text-uppercase">About US</h2>
-               <div class="about-heading__about">&nbsp;</div>
             </div>
-            <div class="about-content__description">
-               <div class="row">
-                  <div class="col-sm-9 centered about-content__description--text">
-                     Fusce lobortis vitae libero id vestibulum. Nunc id accumsan nibh. Integer dictum eu mauris quis fermentum. Duis pulvinar et tortor vel feugiat. Nullam commodo enim eu viverra mattis. Proin eu mauris nec justo placerat tristique. Ut interdum risus eget risus mattis, eget blandit risus finibus. Ut interdum risus eget risus mattis, eget blandit risus finibus.
+          </div>
+        </div>
+      </div>
+
+      <div data-parent="chairs" class="content-parent">
+         <div class="post-heading-center">
+            <h2 class="text-uppercase">Best OF 2016</h2>
+         </div>
+         <div class="container col-center">
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="CarouselBest" class="carousel slide">
+                     <products-best-of></products-best-of>
                   </div>
                </div>
             </div>
@@ -240,18 +120,37 @@
       </div>
    </div>
 
-   <div class="footer">
-      <div class="footer-content">
-         <div class="footer-heading-center">
-            <div class="container">
-               <div class="footer-text">Copyright 2016 - all rights reserved</div>
-            </div>
-         </div>
-      </div>
-   </div>
+                                       <div class="about">
+                                          <div class="about-content">
+                                             <div class="container">
+                                                <div class="about-heading-center">
+                                                   <h2 class="text-uppercase">About US</h2>
+                                                   <div class="about-heading__about">&nbsp;</div>
+                                                </div>
+                                                <div class="about-content__description">
+                                                   <div class="row">
+                                                      <div class="col-sm-9 centered about-content__description--text">
+                                                         Fusce lobortis vitae libero id vestibulum. Nunc id accumsan nibh. Integer dictum eu mauris quis fermentum. Duis pulvinar et tortor vel feugiat. Nullam commodo enim eu viverra mattis. Proin eu mauris nec justo placerat tristique. Ut interdum risus eget risus mattis, eget blandit risus finibus. Ut interdum risus eget risus mattis, eget blandit risus finibus.
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
 
+                                       <div class="footer">
+                                          <div class="footer-content">
+                                             <div class="footer-heading-center">
+                                                <div class="container">
+                                                   <div class="footer-text">Copyright 2016 - all rights reserved</div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
 
-   <script src="vendor/jquery/dist/jquery.min.js"></script>
-   <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+                                       <script src="vendor/jquery/dist/jquery.min.js"></script>
+                                       <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+                                       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+                                       <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<ol class="carousel-indicators">
+  <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+  <li data-target="#Carousel" data-slide-to="1"></li>
+</ol>
+<div class="carousel-inner" ng-repeat="product in $ctrl.collections">
+  <div class="item" ng-class="{ 'active' : items.active === true }" ng-repeat="items in product">
+    <div class="row">
+      <div class="col-sm-3 item-material" data-type="{{item.type}}" ng-repeat="item in items.products">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="text-left text-uppercase">{{item.title}}</h4>
+            <img src="{{item.images}}" class="img-product" alt="" />
+            <div class="panel-body__description">
+              <span class="panel-body__description__detail--title">{{item.description}}</span>
+              <span class="panel-body__description__detail--price">{{item.price}}</span>
+              <span class="panel-body__description__detail--button">
+                <button type="button" class="btn btn-default center-block">
+                  <img src="images/cart-xs.svg" alt="" style="height:22px; width: 27px;" /> <span>Buy Now</span></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -25,7 +25,9 @@ body {
 .p-t-8{
 	padding-top: 8px !important;
 }
-
+.text-black{
+	color: black !important;
+}
 
 /* ========================= Header ========================= */
 
@@ -40,7 +42,6 @@ body {
 	right:0px;
 	left:0px;
 	min-height:0px;
-	font-family:'Source Sans Pro', Arial, serif;
 	color:#202020;
 	padding:20px 0px;
 	margin:0px;
@@ -124,7 +125,6 @@ body {
 /* Navigation Mobile */
 #navigation_mobile {
 	display:none;
-	font-family:'Source Sans Pro', Arial, serif;
 	font-size:15px;
 	line-height:20px;
 	text-align:center;
@@ -268,11 +268,13 @@ body {
   line-height: 34px;
 }
 .filter .checkbox-inline{
-	padding-left: 0px;
+	padding-left: 35px;
 	padding-top: 8px;
+	color: #666666;
 }
 .filter .checkbox-inline + .checkbox-inline{
 	margin-left: 30px;
+	font-size: 16px;
 }
 
 .post-heading-center{ margin-bottom:30px; }
@@ -315,11 +317,30 @@ body {
 	font-weight:300;
 	margin-top:30px;
 }
+
+/* ========================= Panel ========================= */
+
 .col-center .panel{
 	height: 408px;
 	width: 289px;
 	border-color: transparent;
 }
+.col-center .panel:hover{
+	cursor: pointer;
+}
+.col-center .panel .panel-body__description__detail--button button{
+	display: none !important;
+}
+.col-center .panel.active{
+	-webkit-box-shadow: 0px 27px 35px 0.00px #cbcbcb;
+	-moz-box-shadow: 0px 27px 35px 0.00px #cbcbcb;
+	box-shadow: 0px 27px 35px 0.00px #cbcbcb;
+	cursor: pointer;
+}
+.col-center .panel.active .panel-body__description__detail--button button{
+	display: block !important;
+}
+
 .col-center .panel h4{
 	color:  #cfcfcf;
 	font-weight: 700;
@@ -329,6 +350,12 @@ body {
 .col-center .panel-body img{
 	height: 236px;
 }
+.col-center .panel-body .img-product{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 .panel-body__description span + span{
 	line-height: 38px;
 }
@@ -350,8 +377,12 @@ body {
 .panel-body__description__detail--button{
 	text-align: center;
 }
+.panel-body__description__detail--button button:hover{
+	color:  #ffffff;
+	background-color:  #15d6b8;
+	border-color: transparent;
+}
 .panel-body__description__detail--button button{
-	display:block;
 	-webkit-border-radius: 28px;
   -moz-border-radius: 28px;
 	border-radius: 28px;
@@ -408,4 +439,46 @@ body {
 	padding: 15px 0px 0px 25px;
 	color:  #666666;
 	font-size: 16px;
+}
+
+/* ========================= Carousel ========================= */
+
+.carousel-inner{
+	padding-bottom: 30px;
+}
+.carousel-control {
+	left: -12px;
+	height: 40px;
+	width: 40px;
+	background: none repeat scroll 0 0 #222222;
+	border: 4px solid #FFFFFF;
+	border-radius: 23px 23px 23px 23px;
+	margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -30px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	border-style: solid;
+	border-width: 3px;
+	border-color:  #dfdfdf;
+	background: #ffffff;
+	width: 14px;
+height: 14px;
+	margin: 0px 0px 0px 8px !important;
+}
+.carousel-indicators .active {
+	border-radius: 50%;
+background-color:  #dfdfdf;
+width: 14px;
+height: 14px;
+
 }
