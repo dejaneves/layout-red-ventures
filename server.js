@@ -23,5 +23,5 @@ var port = process.env.PORT || 8081;
 app.use(serveStatic(__dirname + client));
 
 app.listen(port,function(){
-    console.log('localhost:'+port);
+    console.log('http://localhost:'+port);
 });

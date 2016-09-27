@@ -241,7 +241,7 @@ body {
 
 .filter{ background-color:#f9f9f9; }
 .filter .row{
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e9e9e9;
 }
 .filter .row > div[class*="col-"] {
 	margin:20px 0px;

@@ -3,8 +3,11 @@
 ## Tchnologies Used
 
 - [Bootstrap](http://getbootstrap.com)
+  - To expedite the development of components
 - [jQuery](https://jquery.com)
+  - To create some behaviors of components
 - [AngujaJS](https://angularjs.org)
+  - Creation of components
 
 ## Setup
   * Clone this repository
