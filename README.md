@@ -1,4 +1,4 @@
-# Layout Red Venture PSD to HTML
+# Layout: Red Ventures PSD to HTML
 
 ## Prerequisites
 
