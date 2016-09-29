@@ -5,7 +5,7 @@
 <div class="carousel-inner" ng-repeat="product in $ctrl.collections">
   <div class="item" ng-class="{ 'active' : items.active === true }" ng-repeat="items in product">
     <div class="row">
-      <div class="col-sm-3 item-material" data-type="{{item.type}}" ng-repeat="item in items.products">
+      <div class="col-xs-12 col-sm-6 col-md-3 item-material" data-type="{{item.type}}" ng-repeat="item in items.products">
         <div class="panel panel-default">
           <div class="panel-body">
             <h4 class="text-left text-uppercase">{{item.title}}</h4>
