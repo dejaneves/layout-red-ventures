@@ -13,7 +13,11 @@ var app = express();
 /**
  * Check the environment of running
  */
-var client = '/app';
+ var client = process.env.NODE_ENV === 'production'
+ ? '/app/dist' : '/app';
+
+ console.log('client: ', client);
+ console.log('environment: ', process.env.NODE_ENV);
 
 /**
  * Check if the environment variable (process.env.PORT) has a value
